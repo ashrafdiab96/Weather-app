@@ -1,13 +1,122 @@
-body {
+body, html {
+  height: 100%;
+  width: 100%;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  font-family: 'Open Sans', serif;
+  background-color: #2c5046;
+}
+
+#root {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Wrapper {
+  background: linear-gradient(#7b7b7b, #116e5d);
+  height: 80%;
+  width: 40%;
+}
+
+.form-container {
+  padding-top: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: auto;
+}
+
+form {
+  text-align: center;
+}
+
+.chooses {
+  background-color: transparent;
+  border: 0;
+  border-bottom: solid 1px rgb(228, 210, 210);
+  width: 100%;
+  display: block;
+  padding-bottom: 4px;
+  color: rgb(228, 210, 210) !important;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+.chooses {
+  outline: none;
+}
+
+::-webkit-input-placeholder {
+  color: rgb(228, 210, 210);
+}
+
+:-ms-input-placeholder {
+  color: rgb(228, 210, 210);
+}
+
+::-ms-input-placeholder {
+  color: rgb(228, 210, 210);
+}
+
+::placeholder {
+  color: rgb(228, 210, 210);
+}
+
+button {
+  border: 0;
+  padding: 8px 20px;
+  margin: 0 2px;
+  border-radius: 2px;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  font-size: 15px;
+  cursor: pointer;
+  background-color: #000;
+  color: rgb(228, 210, 210);
+  font-weight: 100;
+}
+
+button:active {
+  outline: none;
+}
+
+.info {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+
+.info_key {
+  color: #fff;
+  border-bottom: solid 2px rgba(255, 255, 255, 0.06);
+  font-weight: 400;
+}
+
+.info_key:last-child {
+  border: 0;
+}
+
+.info_value {
+  color: #fff;
+  font-weight: 200;
+}
+
+.error {
+  padding: 8px;
+  border-radius: 7px;
+  background-color: rgb(241, 176, 176);
+  color: rgb(204, 2, 2);
+  text-align: center;
+}
+
+.err {
+  color: rgb(204, 2, 2);
 }
